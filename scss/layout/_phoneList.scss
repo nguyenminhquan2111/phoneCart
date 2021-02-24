@@ -1,0 +1,64 @@
+.product__list {
+  padding: 1rem 0;
+  background-color: whitesmoke;
+  .product__list__container {
+    margin: 0 auto;
+    width: 80%;
+    .item__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .item {
+        width: 20%;
+
+        border: 1px solid grey;
+        overflow: hidden;
+        .product {
+          background-color: white;
+          padding: 0 10px;
+          .product__container {
+            padding: 10px;
+            .image__product {
+              img {
+                width: 100%;
+              }
+            }
+            h1 {
+              margin-top: 0.5rem;
+              height: 2rem;
+              font-size: 1rem;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              @media screen and (max-width: 576px) {
+                height: 1rem;
+              }
+            }
+            p {
+              font-size: 0.8rem;
+            }
+          }
+          button {
+            margin-bottom: 5px;
+            border-radius: 0;
+            width: 100%;
+            font-size: 80%;
+          }
+        }
+        @media screen and (max-width: 1200px) {
+          width: 20%;
+        }
+        @media screen and (max-width: 992px) {
+          width: 25%;
+        }
+        @media screen and (max-width: 768px) {
+          width: calc(100% / 3);
+        }
+        @media screen and (max-width: 576px) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
